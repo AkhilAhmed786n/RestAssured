@@ -12,7 +12,7 @@ public class DeleteProjTest {
 	public void deleteTest()
 	{
 		when()
-		.delete("http://localhost:8084/projects/TY_PROJ_802")
+		.delete("http://localhost:8084/projects/TY_PROJ_1015")
 		.then()
 		.assertThat()
 		.statusCode(204)

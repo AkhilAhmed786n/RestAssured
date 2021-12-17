@@ -5,6 +5,8 @@ import static io.restassured.RestAssured.given;
 import org.json.simple.JSONObject;
 import org.testng.annotations.Test;
 
+import com.rmggenericLibrary.JavaUtility;
+
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
@@ -17,9 +19,10 @@ public class CreateProjectTest {
 	@Test
 	public void createProjectTest() 
 	{
+		JavaUtility jutils=new JavaUtility();
 		JSONObject jObj=new JSONObject();
-		jObj.put("createdBy", "AkhilSyed");
-		jObj.put("projectName", "CreateProj");
+		jObj.put("createdBy", "AkhilSyed"+jutils.generateRandomNumber());
+		jObj.put("projectName", "RestFull"+jutils.generateRandomNumber());
 		jObj.put("status", "Completed");
 		jObj.put("teamSize", 8);
 		
