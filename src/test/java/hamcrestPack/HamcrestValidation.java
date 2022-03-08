@@ -15,7 +15,7 @@ public class HamcrestValidation {
 		when()
 		.get("http://localhost:8084/projects")
 		.then().assertThat().time(Matchers.lessThan(5000L), TimeUnit.MILLISECONDS)
-		.assertThat().body("[0].projectName",Matchers.equalTo("SDET_2"))
+		.assertThat().body("[0].projectName",Matchers.equalTo("bangProj996"))
 		.log().all();
 		
 	}

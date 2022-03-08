@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="crudWithoutBDD.UpdateTest">
+      <class name="hamcrestPack.HamcrestValidation">
         <methods>
-          <include name="updateTest"/>
+          <include name="hamcrestvalidation"/>
         </methods>
-      </class> <!-- crudWithoutBDD.UpdateTest -->
+      </class> <!-- hamcrestPack.HamcrestValidation -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
