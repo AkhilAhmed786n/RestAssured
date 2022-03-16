@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="hamcrestPack.HamcrestValidation">
+      <class name="responseTypes.DynamicResponse">
         <methods>
-          <include name="hamcrestvalidation"/>
+          <include name="dynamicResponse"/>
         </methods>
-      </class> <!-- hamcrestPack.HamcrestValidation -->
+      </class> <!-- responseTypes.DynamicResponse -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
